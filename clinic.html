@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DoctorMed</title>
+	 <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	  <link rel="stylesheet" type="text/css" href="css/style.css">
+	  <meta charset="UTF-8">
+		<script src="JS/jquery-ui.min.js"></script>
+		<script src="JS/jquery-3.7.1.min.js"></script>
+		<script src="JS/mylibs1.js"></script>
+  </head>
+  <body class="indexb">
+    <header>
+      <div class="top-bar">
+        <div class="logo">
+          <h1 id="up_logo"><a href="index.html"><img src="images/logo1.png"></h1></a>
+        </div>
+        <div class="contact-info">
+          <p>Телефон: +380630600000</p>
+          <p>Адреса: м. Київ, вул. Вулична, 123</p>
+          <p>Email: doctormed@gmail.com</p>
+        </div>
+      </div>
+      
+      <nav>
+        <ul>
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="clinic.html">Про клініку</a></li>
+          <li><a href="doctors.html">Лікарі</a></li>
+          <li><a href="analyse.html">Дослідження</a></li>
+          <li><a href="price.html">Ціни</a></li>
+          <li><a href="contacts.html">Контакти</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="main_info">
+    <section class="about">
+      <h2>Про клініку</h2>
+	  <p>DoctorMed – це сучасний медичний центр, що з гордістю надає високоякісні медичні послуги. З моменту свого заснування ми прагнемо 
+	  створити середовище, де кожен пацієнт відчуває себе у безпеці та отримує найкраще лікування. Наша клініка, розташована у зручному місці,
+	  оснащена найновітнішим обладнанням, що дозволяє нам забезпечувати широкий спектр медичних послуг на найвищому рівні.<br><br>
+	  DoctorMed завжди прагне бути на крок попереду, впроваджуючи новітні медичні технології та методики лікування. Ми пишаємося нашою командою 
+	  висококваліфікованих спеціалістів, які завжди готові надати професійну допомогу та підтримку. Кожен лікар у нашій клініці – це не просто 
+	  спеціаліст своєї справи, але й людина, яка дбає про здоров'я та благополуччя своїх пацієнтів.<br><br>
+	  Ми віримо, що успішне лікування починається з правильного діагнозу, тому особливу увагу приділяємо діагностичним обстеженням.
+	  Використовуючи найсучасніше обладнання, ми можемо швидко та точно визначити стан здоров'я пацієнта і розробити ефективний план лікування.<br>
+      DoctorMed – це місце, де кожен пацієнт може розраховувати на індивідуальний підхід і найвищий рівень медичного обслуговування.
+	  Ми розуміємо, наскільки важливо почуватися впевнено у своєму здоров'ї, тому робимо все можливе, щоб наші пацієнти отримували
+	  найкраще лікування і могли повернутися до свого звичайного життя якомога швидше.<br><br>
+    </section>
+	<div class="photo-container">
+      <img src="images/a1.jpg" alt="Image 1" class="photo1">
+      <img src="images/a2.jpg" alt="Image 2" class="photo1">
+    </div><br><br>
+  </section>
+    <footer>
+      <p>&copy; 2023-2024 DoctorMed. Усі права захищені.</p>
+    </footer>
+  
+
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+	   setInterval(function() {
+		plusSlides(1);
+		}, 4000);
+    </script>
+  </body>
+</html>
