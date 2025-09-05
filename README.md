@@ -1,15 +1,14 @@
-🌐 Simple Website
+🩺 Doctormed Website
 
-This is a simple website project, designed to practice basic web development skills using HTML, CSS, and JavaScript. It is perfect for learning layout, styling, and simple interactivity.
+Welcome to Doctormed — a professional medical website created in 2024. This project is one of my recent web development achievements, showcasing my skills in building modern, functional, and visually appealing websites.
 
 📌 Project Overview
 
-Purpose: Practice creating a clean, functional web page.
+Purpose: Provide information about medical services, doctors, and clinics.
 
-Content: Basic homepage with text, images, and links.
+Content: Includes doctor profiles, service descriptions, contact information, and online appointment booking.
 
-Design: Minimalist and easy-to-read layout, optimized for desktop.
-
+Design: Modern, user-friendly interface, optimized for multiple devices.
 🌐 Live Demo
 
 Check out the website here:
